@@ -26,13 +26,12 @@ vim.g.maplocalleader = "\\"
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
-    {
-      "marko-cerovac/material.nvim",
-      config = function()
-        vim.g.material_style = "darker"
-        vim.cmd.colorscheme "material"
-      end
-    },
+    { "blazkwolf/gruber-darker.nvim", config = function() vim.cmd.colorscheme "gruber-darker" end },
     { import = "config.plugins" },
+  },
+  change_detection = {
+    -- automatically check for config file changes and reload the ui
+    enabled = false,
+    notify = false, -- get a notification when changes are found
   },
 })
