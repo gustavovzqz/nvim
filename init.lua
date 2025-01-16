@@ -13,7 +13,9 @@ vim.opt.relativenumber = true
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
--- Sets how neovim will display certain whitespace characters in the editor. vim.opt.list = true
+-- Sets how neovim will display certain whitespace characters in the editor.
+
+vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 -- Preview substitutions live, as you type!
